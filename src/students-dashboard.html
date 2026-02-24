@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white h-screen overflow-hidden font-sans">
+
+  <!-- MAIN WRAPPER -->
+  <div class="flex h-full">
+
+
+
+    <!-- RIGHT SIDE -->
+    <div class="flex-1 flex flex-col h-full">
+
+     <!-- TOP NAVIGATION -->
+      <div class="flex justify-between items-center bg-[#1a1a1a] px-10 py-4">
+        <div class="flex gap-2"><img src="assets/Ellipse 1.png" alt="">HMS</div>
+        <div class="flex space-x-10 text-gray-300">
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector.png" alt=""><a href="index.html">Dashboard</a></span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(1).png" alt="">Rooms</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(2).png" alt="">Attendance</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(3).png" alt="">Accounts</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(4).png" alt="">Maintenance</span>
+        </div>
+
+        <div class="flex space-x-6">
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden"><img src="assets/Vector (Stroke).png" alt="" class=" ml-0.5"></div>
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden "><img src="assets/Vector(5).png" alt="" class="mt-0.5 ml-1"></div>
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden"><img src="assets/Vector(6).png" alt="" class="mt-0.5 ml-1.5"></div>
+        </div>
+      </div>
+
+
+      <!-- CONTENT AREA -->
+      <div class="flex-1 flex p-6 gap-6 h-full">
+
+            <!-- SIDEBAR -->
+        <div class="w-64 bg-[#1a1a1a] p-6 max-h-screen">
+            <ul class="space-y-6 text-gray-300">
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(3)a.png" alt="">Analytics</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vectora.png" alt="">Students</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/feAngry2a.png" alt="">Complaints</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/a.png" alt="">Stock</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(1)a.png" alt="">Users</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(2)a.png" alt="">Meals</li>
+            </ul>
+        </div>
+
+        <!-- LEFT CONTENT -->
+        <div class="flex-[3] flex flex-col gap-4 h-full">
+
+          <!-- STATS SECTION -->
+          <div class="bg-[#1a1a1a] rounded-2xl p-2 flex-[1] flex gap-2 flex-wrap">
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4">
+              <p class="text-gray-400 text-sm">Total Students</p>
+              <p class="text-xl font-bold">3569</p>
+            </div>
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4">
+              <p class="text-gray-400 text-sm">In Hostel</p>
+              <p class="text-xl font-bold text-cyan-400">1569</p>
+            </div>
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4">
+              <p class="text-gray-400 text-sm">Outside Hostel</p>
+              <p class="text-xl font-bold">2500</p>
+            </div>
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4 flex flex-col justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Fees Defaulters</p>
+                <p class="text-2xl font-bold text-yellow-400">150</p>
+              </div>
+              <button class="bg-gray-700 rounded-lg py-1 text-sm mt-2">
+                View List
+              </button>
+            </div>
+            <div class="w-full"></div>
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4 flex flex-col justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Students Assigned</p>
+                <p class="text-2xl font-bold text-yellow-400">150</p>
+              </div>
+              <button class="bg-gray-700 rounded-lg py-1 text-sm mt-2">
+                View List
+              </button>
+            </div>
+
+            <div class="bg-[#111] flex-1 rounded-xl p-4 flex flex-col justify-between">
+              <div>
+                <p class="text-gray-400 text-sm">Students Removed</p>
+                <p class="text-2xl font-bold text-yellow-400">150</p>
+              </div>
+              <button class="bg-gray-700 rounded-lg py-1 text-sm mt-2">
+                View List
+              </button>
+            </div>
+
+          </div>
+
+          <!-- TABLE SECTION -->
+          <div class="flex-[3] flex gap-4">
+
+            <!-- STUDENTS LIST -->
+            <div class="bg-[#1a1a1a] flex-1 rounded-2xl p-4 flex flex-col justify-between">
+
+              <h2 class="text-sm text-gray-400 mb-2">Students</h2>
+
+              <div class="flex flex-col gap-2 flex-1 justify-between">
+
+                <!-- Repeated Row -->
+                <div class="bg-[#111] p-2 rounded-lg flex justify-between items-center">
+                  <span>Abhinav Srivastva</span>
+                  <span>👁</span>
+                </div>
+
+                <div class="bg-[#111] p-2 rounded-lg flex justify-between items-center">
+                  <span>Abhinav Srivastva</span>
+                  <span>👁</span>
+                </div>
+
+                <div class="bg-[#111] p-2 rounded-lg flex justify-between items-center">
+                  <span>Abhinav Srivastva</span>
+                  <span>👁</span>
+                </div>
+
+                <div class="bg-[#111] p-2 rounded-lg flex justify-between items-center">
+                  <span>Abhinav Srivastva</span>
+                  <span>👁</span>
+                </div>
+
+                <div class="bg-[#111] p-2 rounded-lg flex justify-between items-center">
+                  <span>Abhinav Srivastva</span>
+                  <span>👁</span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- DEFAULTERS -->
+            <div class="bg-[#1a1a1a] flex-1 rounded-2xl p-4 flex flex-col justify-between">
+
+              <h2 class="text-sm text-gray-400 mb-2">Defaulters</h2>
+
+              <div class="flex flex-col gap-4 flex-1 justify-between">
+
+                <div class="bg-[#111] p-3 rounded-lg flex flex-col gap-2">
+                  <p>Abhinav Srivastva</p>
+                  <p class="text-xs text-gray-400">Fine: ₹1500</p>
+                  <div class="flex gap-2">
+                    <button class="border border-red-500 text-red-500 text-xs px-2 py-1 rounded-lg">
+                      Remove
+                    </button>
+                    <button class="border border-cyan-400 text-cyan-400 text-xs px-2 py-1 rounded-lg">
+                      Send Link
+                    </button>
+                  </div>
+                </div>
+
+                <div class="bg-[#111] p-3 rounded-lg flex flex-col gap-2">
+                  <p>Abhinav Srivastva</p>
+                  <p class="text-xs text-gray-400">Fine: ₹1500</p>
+                  <div class="flex gap-2">
+                    <button class="border border-red-500 text-red-500 text-xs px-2 py-1 rounded-lg">
+                      Remove
+                    </button>
+                    <button class="border border-cyan-400 text-cyan-400 text-xs px-2 py-1 rounded-lg">
+                      Send Link
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="flex-1 flex flex-col gap-4 h-full">
+
+          <!-- ACTION BUTTONS -->
+          <div class="bg-[#1a1a1a] rounded-2xl p-4 flex flex-col gap-3">
+            <button class="border border-cyan-400 text-cyan-400 py-2 rounded-xl">
+              + Add Student
+            </button>
+            <button class="border border-red-500 text-red-500 py-2 rounded-xl">
+              Remove Student
+            </button>
+          </div>
+
+          <!-- STUDENT UPDATE -->
+          <div class="bg-[#1a1a1a] rounded-2xl p-4 flex-1 flex flex-col justify-between">
+
+            <h2 class="text-sm text-gray-400 mb-2">Student Update</h2>
+
+            <div class="flex flex-col gap-2 flex-1 justify-between">
+
+              <div class="bg-[#111] p-2 rounded-lg flex justify-between">
+                <span>Ramakant Sharma</span>
+                <span class="text-xs text-gray-400">12:30</span>
+              </div>
+
+              <div class="bg-[#111] p-2 rounded-lg flex justify-between">
+                <span>Ramakant Sharma</span>
+                <span class="text-xs text-gray-400">12:30</span>
+              </div>
+
+              <div class="bg-[#111] p-2 rounded-lg flex justify-between">
+                <span>Ramakant Sharma</span>
+                <span class="text-xs text-gray-400">12:30</span>
+              </div>
+
+              <div class="bg-[#111] p-2 rounded-lg flex justify-between">
+                <span>Ramakant Sharma</span>
+                <span class="text-xs text-gray-400">12:30</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
