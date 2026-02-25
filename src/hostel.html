@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f0f0f] text-white font-sans">
+
+  <!-- MAIN CONTAINER -->
+  <div class="flex flex-col max-h-screen">
+     <!-- TOP NAVIGATION -->
+      <div class="flex justify-between items-center bg-[#1a1a1a] px-10 py-4">
+        <div class="flex gap-2"><img src="assets/Ellipse 1.png" alt="">HMS</div>
+        <div class="flex space-x-10 text-gray-300">
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector.png" alt="">Dashboard</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(1).png" alt=""><a href="rooms.html">Rooms</a></span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(2).png" alt="">Attendance</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(3).png" alt="">Accounts</span>
+          <span class="hover:text-cyan-400 font-semibold flex gap-2 items-center"><img src="assets/Vector(4).png" alt="">Maintenance</span>
+        </div>
+
+        <div class="flex space-x-6">
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden"><img src="assets/Vector (Stroke).png" alt="" class=" ml-0.5"></div>
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden "><img src="assets/Vector(5).png" alt="" class="mt-0.5 ml-1"></div>
+          <div class="w-8 h-8 bg-gray-700 rounded-full overflow-hidden"><img src="assets/Vector(6).png" alt="" class="mt-0.5 ml-1.5"></div>
+        </div>
+      </div>
+
+    <!-- RIGHT CONTENT AREA -->
+    <div class="flex-1 flex flex-col">
+
+      <!-- DASHBOARD CONTENT -->
+      <div class="flex flex-1 p-8 space-x-6 overflow-y-auto ">
+
+            <!-- SIDEBAR -->
+        <div class="w-64 bg-[#1a1a1a] p-6 max-h-screen">
+            <ul class="space-y-6 text-gray-300">
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(3)a.png" alt="">Analytics</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2  border-cyan-400"><img src="assets/Vectora.png" alt=""><a href="hostel.html">Hostel</a></li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/feAngry2a.png" alt="">Complaints</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/a.png" alt="">Stock</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(1)a.png" alt="">Users</li>
+                <li class="hover:text-cyan-400 font-semibold flex gap-2"><img src="assets/Vector(2)a.png" alt="">Meals</li>
+            </ul>
+        </div>
+
+        <!-- LEFT SECTION -->
+        <div class="h-full flex flex-col gap-6 p-6">
+
+        <!-- ================= HOSTEL SECTION ================= -->
+        <div class="flex-1 bg-gradient-to-r from-[#1b1b1b] to-[#222] rounded-2xl p-6 flex gap-6">
+
+            <!-- LEFT SECTION -->
+            <div class="w-1/4 flex flex-col justify-between">
+
+            <!-- Title + Address -->
+            <div>
+                <h2 class="text-lg mb-2">Hostel 1</h2>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                Plot number 206, Tihri Nagar,<br>
+                Main Hawai Sadak<br>
+                Jaipur - Rajasthan - 302021 India
+                </p>
+            </div>
+
+            <!-- Occupancy Ring -->
+            <div class="flex justify-center">
+                <div class="relative w-40 h-40">
+                <div class="w-full h-full rounded-full border-[16px] border-cyan-400 border-t-gray-700 border-r-gray-700 border-b-gray-700"></div>
+                <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold">
+                    50%
+                </span>
+                </div>
+            </div>
+
+            <!-- Add Room Button -->
+            <button class="bg-teal-600 py-2 rounded-xl font-semibold">
+                +Add Room
+            </button>
+
+            </div>
+
+            <!-- CENTER SECTION -->
+            <div class="flex-1 flex flex-col justify-between">
+
+            <!-- Top Stats -->
+            <div class="flex gap-4">
+                <div class="bg-[#111] flex-1 p-4 rounded-xl text-center">
+                <p class="text-xl font-bold text-pink-500">458</p>
+                </div>
+                <div class="bg-[#111] flex-1 p-4 rounded-xl text-center">
+                <p class="text-xl font-bold text-green-400">5</p>
+                </div>
+                <div class="bg-[#111] flex-1 p-4 rounded-xl text-center">
+                <p class="text-xl font-bold text-red-500">15</p>
+                </div>
+            </div>
+
+            <!-- Middle Stats -->
+            <div class="flex gap-4">
+                <div class="bg-[#111] flex-1 p-4 rounded-xl">
+                <p class="text-sm text-gray-400">Total Rooms</p>
+                <p class="text-lg font-bold">458</p>
+                </div>
+                <div class="bg-[#111] flex-1 p-4 rounded-xl">
+                <p class="text-sm text-gray-400">Occupied</p>
+                <p class="text-lg font-bold text-yellow-400">58</p>
+                </div>
+                <div class="bg-[#111] flex-1 p-4 rounded-xl">
+                <p class="text-sm text-gray-400">Floors</p>
+                <p class="text-lg font-bold">3</p>
+                </div>
+            </div>
+
+            <!-- Student Stats -->
+            <div class="bg-[#111] p-4 rounded-xl flex justify-between">
+                <div>
+                <p class="text-sm text-gray-400">Students</p>
+                <p class="text-lg font-bold">6582</p>
+                </div>
+                <div>
+                <p class="text-sm text-gray-400">In Hostel</p>
+                <p class="text-lg font-bold text-cyan-400">1569</p>
+                </div>
+                <div>
+                <p class="text-sm text-gray-400">Outside Hostel</p>
+                <p class="text-lg font-bold text-gray-300">2500</p>
+                </div>
+            </div>
+
+            <!-- Revenue Stats -->
+            <div class="bg-[#111] p-4 rounded-xl flex justify-between">
+                <div>
+                <p class="text-sm text-gray-400">Expected</p>
+                <p class="text-lg font-bold">₹ 15,65,852</p>
+                </div>
+                <div>
+                <p class="text-sm text-gray-400">Collected</p>
+                <p class="text-lg font-bold text-cyan-400">₹ 3,91,463</p>
+                </div>
+                <div>
+                <p class="text-sm text-gray-400">Remaining</p>
+                <p class="text-lg font-bold text-yellow-400">₹ 7,51,608</p>
+                </div>
+                <div>
+                <p class="text-sm text-gray-400">Overdue</p>
+                <p class="text-lg font-bold text-pink-500">₹ 4,85,414.12</p>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- COLLECTION SECTION -->
+            <div class="w-1/4 flex flex-col justify-between">
+
+            <div class="bg-[#111] rounded-2xl p-4 flex flex-col items-center">
+                <h3 class="mb-4">Collection</h3>
+
+                <div class="relative w-40 h-40">
+                <div class="w-full h-full rounded-full border-[16px] border-yellow-400 border-r-pink-500 border-b-cyan-400 border-l-gray-700"></div>
+                <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold">
+                    25%
+                </span>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- FURNITURE SECTION -->
+            <div class="w-1/4 bg-[#111] rounded-2xl p-4 flex flex-col justify-between">
+
+            <div>
+                <h3 class="mb-4">Furniture</h3>
+
+                <div class="space-y-3">
+                    <div class="flex justify-between bg-[#1b1b1b] p-3 rounded-lg">
+                        <span>Ceiling Fan</span>
+                        <span>50</span>
+                    </div>
+                    <div class="flex justify-between bg-[#1b1b1b] p-3 rounded-lg">
+                        <span>Center Table</span>
+                        <span>12</span>
+                    </div>
+                    <div class="flex justify-between bg-[#1b1b1b] p-3 rounded-lg">
+                        <span>Chairs</span>
+                        <span>123</span>
+                    </div>
+                    <div class="flex justify-between bg-[#1b1b1b] p-3 rounded-lg">
+                        <span>Refrigerator</span>
+                        <span>06</span>
+                    </div>
+                </div>  
+
+        </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+</html>
